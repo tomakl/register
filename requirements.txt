@@ -10,7 +10,6 @@ django-import-export==1.0.1
 django-js-asset==1.1.0
 django-pagination-bootstrap==1.2.4
 django-registration==3.0
-django-suit==2.0a1
 django-tables2==2.0.1
 et-xmlfile==1.0.1
 jdcal==1.4
