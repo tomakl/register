@@ -46,7 +46,9 @@ class Competition(models.Model):
     allowed = models.IntegerField(verbose_name='Limit', default='0')
     reported = models.IntegerField(verbose_name='Zgłoszonych', null=True, blank='True', default='0')
 
-
+    @property
+    def is_past_due(self):
+        return date.today() < self.date
 
     class Meta:
         verbose_name = ("Zawody")

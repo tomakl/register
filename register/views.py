@@ -42,4 +42,5 @@ def competitor_list(request, pk):
 
 
 
+
 # Create your views here.

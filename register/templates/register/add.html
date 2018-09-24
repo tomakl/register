@@ -1,10 +1,6 @@
 {% extends 'register/base.html' %}
 {% load bootstrap4 %}
 {% block content %}
-
-
-<div class="postcontent nobottommargin">
-
     {% if messages %}
     <div class="alert alert-success">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
@@ -13,13 +9,12 @@
         {% endfor %}
     </div>
     {% endif %}
-    <h3>Rejestracja</h3>
+    <h3>Rejestracja {{ comp_name }}</h3>
     <div class="contact-widget">
         <div class="contact-form-result"></div>
         <form method="post" class="form login-form">
             {% csrf_token %}
             {% bootstrap_form form show_label=False %}
-
             {% buttons %}
             <button type="submit" class="btn btn-red btn-block">Zapisz się</button>
             {% endbuttons %}
@@ -28,5 +23,4 @@
 
     </div>
 </div>
-
 {% endblock %}

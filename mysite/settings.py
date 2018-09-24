@@ -24,7 +24,7 @@ SECRET_KEY = 'jn8oo+qdgwdrwhtz^kqw6o(m_vhadh$#4whdww&cr!z(&*sn2+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'tomakl.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'demo.localhost']
 
 # Application definition
 

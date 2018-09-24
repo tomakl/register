@@ -19,14 +19,14 @@
             {% if comp.status == 1 %}
             <li><span class="badge badge-info">Zapisy</span></li>
             {% endif %}
-            <li><a href="#"><i class="icon-time"></i>{{comp.date}}</a></li>
+            <li><a href="#"><i class="icon-time"></i>{{comp.date|date:"d M Y"}}</a></li>
             <li><a href="#"><i class="icon-map-marker2"></i>{{comp.place}}</a></li>
             <li><a href="#"><i class="icon-map-marker2"></i>Miejsc: {{ comp.allowed }}/ {{ comp.reported }}</a></li>
           </ul>
           <div class="entry-content">
             <p>{{comp.info}}</p>
               <a href="regulatory/{{comp.reg_name}}"> <button class="button button-border button-border-thin button-red">Regulamin</button></a>
-              <a href="add/{{comp.id}}" class="button button-border button-border-thin button-green">Zapisz się</a>
+              <a href="add/{{comp.id}}" class="button button-border button-border-thin button-green disabled">Zapisz się</a>
               <a href="list/{{comp.id}}" class="button button-border button-border-thin button-amber">Lista</a>
             </div>
         </div>
